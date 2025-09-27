@@ -126,7 +126,7 @@ const clickHijoConStop = () => console.log('Click en HIJO CON .stop')
     <!--MENSAJES-->
     <section class="card">
       <h2>Mensajes</h2>
-      <input v-model="nuevoMensaje" @keyup.enter="enviarMensaje" plaeceholder="Escribe y presiona enter"/>
+      <input v-model="nuevoMensaje" @keyup.enter="enviarMensaje" placeholder="Escribe y presiona enter"/>
       <ul>
         <li v-for="(m, i) in mensajes" :key="i">{{ m }}</li>
       </ul>
